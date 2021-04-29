@@ -44,6 +44,8 @@ while True:
         halo_arr.append(take_number)
 
     result_out.appendleft(halo_arr[0])
+    if len_a == 0 and len_b == 0:
+        break
 
     if len_a == 0:
         while True:
