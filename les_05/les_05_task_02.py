@@ -45,6 +45,9 @@ while True:
 
     result_out.appendleft(halo_arr[0])
     if len_a == 0 and len_b == 0:
+        if one_step == 1:
+            result_out.appendleft('1')
+            one_step = 0
         break
 
     if len_a == 0:
