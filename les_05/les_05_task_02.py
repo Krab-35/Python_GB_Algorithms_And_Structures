@@ -36,9 +36,6 @@ while True:
     if pos_a + pos_b >= 17:
         one_step = 1
 
-    if pos_a >= 11 and pos_b >= 11:
-        pos_b -= 1
-
     for el in range(pos_b - 1):
         take_number = halo_arr.popleft()
         halo_arr.append(take_number)
@@ -69,6 +66,7 @@ while True:
             if len_b == 0:
                 break
         break
+
     if len_b == 0:
         while True:
             take_a = input_a.pop()
@@ -88,6 +86,5 @@ while True:
             if len_b == 0:
                 break
         break
-
 
 print(f'Результат сложения двух чисел: {result_out}')
