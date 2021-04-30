@@ -40,7 +40,7 @@ while True:
         halo_arr.append(take_step)
         one_step = 0
 
-    if pos_a + pos_b >= 17:
+    if pos_a + pos_b > 17:
         one_step = 1
 
     for el in range(pos_b - 1):
