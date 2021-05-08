@@ -17,7 +17,7 @@ print(f'Средняя прыбыль организаций: {round(sum(coll_co
 max_org = []
 min_org = []
 for org, count in coll_count.items():
-    if count >= sum(coll_count.values())/org_count:
+    if count >= round(sum(coll_count.values())/org_count, 2):
         max_org.append(org)
     else:
         min_org.append(org)
