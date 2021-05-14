@@ -122,7 +122,6 @@ def encoding_fun(i_array, key_array):
         if step == 4:
             result_encoding += ' '
             step = 0
-
     return result_encoding
 
 
